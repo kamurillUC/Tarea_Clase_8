@@ -1,0 +1,55 @@
+table {  
+  border-collapse: collapse;  
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.container {
+  display: flex;
+  justify-content: center;  
+  border-radius: 16px;
+  border-color: gray;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.btnStatusG {
+  background-color: #8CBC3D;
+  color: white;
+  border-radius: 4px;
+  border-style: none;
+  width: 4rem;
+  height: 2rem;
+}
+
+.btnStatusG:hover {
+  background-color: #6E9C24;
+  transform: scale(1.1);    
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.btnStatusR {
+  background-color: #A62D30;
+  color: white;
+  border-radius: 4px;
+  border-style: none;
+  width: 4rem;
+  height: 2rem;
+}
+
+.btnStatusR:hover {
+  background-color: #790F12;
+  transform: scale(1.1);    
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+

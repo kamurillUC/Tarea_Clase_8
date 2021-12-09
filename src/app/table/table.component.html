@@ -1,0 +1,30 @@
+<div class="container">
+  <table>
+    <caption>Restaurantes</caption>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nombre</th>
+        <th>Dirección</th>
+        <th>Estrellas</th>
+        <th>Fecha Creada</th>
+        <th>Estado</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let restaurant of restaurants; let i = index;">
+      <tr>
+        <td>{{i+1}}</td>
+        <td>{{restaurant.name}}</td>
+        <td>{{restaurant.address}}</td>
+        <td>{{restaurant.stars}}</td>
+        <td>{{restaurant.dateCreated | date: 'yyyy/MM/dd'}}</td>    
+        
+        <td><button (click)="cambiarEstado(i)" type="button" [ngClass]="{'btnStatusG' : restaurant.color,'btnStatusR' : !restaurant.color}">{{restaurant.status}}</button></td>          
+        
+        <td><button (click)="eliminarRestaurante(i)" type="button" class="btnStatusR">Eliminar</button></td>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
